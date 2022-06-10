@@ -1,3 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+:root {
+    --title: #f8c27a;
+    --text-shadow: 0 2px 2px rgba(0, 0, 0, 0.7);
+    --boxShadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
 body {
-    background-color: aquamarine;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(120deg, #071571 0%, #5ac7f3 100% );
+}
+
+body {
+    font-size: 14px;
+    width: 100vw;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.containeer {
+    background-color: rgba(255, 255, 255, .2);
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: var(--boxShadow);
+}
+
+h1 {
+    font-family: 'Luckiest Guy', cursive;
+    margin-bottom: 15px;
+    color: #ffc31d;
+    text-shadow: var(--text-shadow);
+    display: inline-block;
+}
+
+.vies {
+    margin: 10px;
+}
+
+ion-icon {
+    font-size: 50px;
+    fill: red;
+}
+
+#inputBox {
+    background-color: #7dbdd6;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+#inputBox > label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+button {
+    outline: none;
+    border-radius: none;
+    padding: 3px 20px;
+    border-radius: 5px;
+}
+
+button {
+    background-color: teal;
+     color: #ffffff;
+     cursor: pointer;
 }
