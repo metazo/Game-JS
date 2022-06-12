@@ -45,6 +45,7 @@ const play = () => {
       body.style.backgroundImage = bgWin;
       message.textContent = `BRAVO !!! Le nombre était bien ${randomNumber}`;
       rejouerBtn.body.display = "block";
+      essayerBtn.setAttribute("disabled", ""); 
     }
 
     if (valeurInput !== randomNumber) {
@@ -92,5 +93,19 @@ const play = () => {
       for (let i = 0; i < vies; i++) {
         tableauDeVies.push(coeurPlein);
       }
+      for (let i = 0; i < totalVies - vies; i++) {
+        tableauDeVies.push(coeurVide);
+      }
+      tableauDeVies.forEach(coeur => {
+          divVies.innerHTML += coeur;
+      })
   }
+  actualiseCoeurs(vies);
+
+  rejouerBtn.addEventListener('click', () => {
+      message.style.display = 'none';
+      document.location.reload = (true);
+  })
 };
+
+play();
